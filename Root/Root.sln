@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL.Root", "..\BLL.Root\BLL.Root.csproj", "{C46EA8FF-0672-4B9E-AB72-ACD67C6D676C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Root", "..\DAL.Root\DAL.Root.csproj", "{7B4351E3-9CBF-4F0E-8829-9BE6FF753C15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Root.EF", "..\DAL.Root.EF\DAL.Root.EF.csproj", "{00BC23DC-DB68-4AD2-8F7B-E4960496B47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Root.NHibernate", "..\DAL.Root.NHibernate\DAL.Root.NHibernate.csproj", "{9ECB0D85-6A35-4C58-8479-FB20B3E21DA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util.Root", "..\Util.Root\Util.Root.csproj", "{FC4E2DCD-4342-4866-9E60-3FCC8C02D1A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Root", "..\Web.Root\Web.Root.csproj", "{DFE997B1-5459-4F49-A835-D61BA886DE70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Root     [This is here to output all DLL's to a common folder]", "Root\Root     [This is here to output all DLL's to a common folder].csproj", "{6ADB09BF-0C0B-46EB-BC92-31A74C49AF39}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://swtfs2010:8080/tfs/sitewire%20projects
+		SccProjectUniqueName0 = ..\\Util.Root\\Util.Root.csproj
+		SccProjectName0 = ../Util.Root
+		SccLocalPath0 = ..\\Util.Root
+		SccProjectUniqueName1 = ..\\DAL.Root\\DAL.Root.csproj
+		SccProjectName1 = ../DAL.Root
+		SccLocalPath1 = ..\\DAL.Root
+		SccProjectUniqueName2 = ..\\BLL.Root\\BLL.Root.csproj
+		SccProjectName2 = ../BLL.Root
+		SccLocalPath2 = ..\\BLL.Root
+		SccProjectUniqueName3 = ..\\DAL.Root.NHibernate\\DAL.Root.NHibernate.csproj
+		SccProjectName3 = ../DAL.Root.NHibernate
+		SccLocalPath3 = ..\\DAL.Root.NHibernate
+		SccProjectUniqueName4 = ..\\Web.Root\\Web.Root.csproj
+		SccProjectName4 = ../Web.Root
+		SccLocalPath4 = ..\\Web.Root
+		SccLocalPath5 = .
+		SccProjectUniqueName6 = ..\\DAL.Root.EF\\DAL.Root.EF.csproj
+		SccProjectName6 = ../DAL.Root.EF
+		SccLocalPath6 = ..\\DAL.Root.EF
+		SccProjectUniqueName7 = Root\\Root\u0020\u0020\u0020\u0020\u0020[This\u0020is\u0020here\u0020to\u0020output\u0020all\u0020DLL's\u0020to\u0020a\u0020common\u0020folder].csproj
+		SccProjectName7 = Root
+		SccLocalPath7 = Root
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C46EA8FF-0672-4B9E-AB72-ACD67C6D676C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46EA8FF-0672-4B9E-AB72-ACD67C6D676C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46EA8FF-0672-4B9E-AB72-ACD67C6D676C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46EA8FF-0672-4B9E-AB72-ACD67C6D676C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B4351E3-9CBF-4F0E-8829-9BE6FF753C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B4351E3-9CBF-4F0E-8829-9BE6FF753C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B4351E3-9CBF-4F0E-8829-9BE6FF753C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B4351E3-9CBF-4F0E-8829-9BE6FF753C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00BC23DC-DB68-4AD2-8F7B-E4960496B47A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BC23DC-DB68-4AD2-8F7B-E4960496B47A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BC23DC-DB68-4AD2-8F7B-E4960496B47A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BC23DC-DB68-4AD2-8F7B-E4960496B47A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECB0D85-6A35-4C58-8479-FB20B3E21DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECB0D85-6A35-4C58-8479-FB20B3E21DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECB0D85-6A35-4C58-8479-FB20B3E21DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECB0D85-6A35-4C58-8479-FB20B3E21DA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC4E2DCD-4342-4866-9E60-3FCC8C02D1A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4E2DCD-4342-4866-9E60-3FCC8C02D1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4E2DCD-4342-4866-9E60-3FCC8C02D1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4E2DCD-4342-4866-9E60-3FCC8C02D1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE997B1-5459-4F49-A835-D61BA886DE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE997B1-5459-4F49-A835-D61BA886DE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE997B1-5459-4F49-A835-D61BA886DE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE997B1-5459-4F49-A835-D61BA886DE70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADB09BF-0C0B-46EB-BC92-31A74C49AF39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADB09BF-0C0B-46EB-BC92-31A74C49AF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADB09BF-0C0B-46EB-BC92-31A74C49AF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADB09BF-0C0B-46EB-BC92-31A74C49AF39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

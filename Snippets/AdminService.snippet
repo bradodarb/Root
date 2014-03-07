@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>SnippetFile1</Title>
+      <Author>admin</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>adminservice</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>className</ID>
+          <ToolTip>class name</ToolTip>
+          <Default>className</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[using BLL.Root.Admin;
+using DAL.Root;
+using System;
+using tic.IrvinePacific.BLL.DTO;
+using tic.IrvinePacific.BLL.Services.Interface;
+
+public class $className$AdminService : AdminServiceBase<$className$Dto, IPersistenceEntity>, I$className$Provider
+	{
+
+		public override $className$Dto New($className$Dto modelstart)
+		{
+			// TODO call webservice to create a new $className$
+			throw new NotImplementedException();
+		}
+
+		public override bool Update($className$Dto source, out int id)
+		{
+			// TODO call webservice to update $className$
+			throw new NotImplementedException();
+		}
+
+		protected override void OnItemCreated($className$Dto item) { }
+
+		protected override void OnItemDeleted($className$Dto item) { }
+
+		protected override void OnItemUpdated($className$Dto item) { }
+
+		public override object[] GetMatches(string target)
+		{
+			throw new NotImplementedException();
+		}
+	}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6ADB09BF-0C0B-46EB-BC92-31A74C49AF39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Root</RootNamespace>
+    <AssemblyName>Root</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BLL.Root\BLL.Root.csproj">
+      <Project>{c46ea8ff-0672-4b9e-ab72-acd67c6d676c}</Project>
+      <Name>BLL.Root</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DAL.Root.EF\DAL.Root.EF.csproj">
+      <Project>{00bc23dc-db68-4ad2-8f7b-e4960496b47a}</Project>
+      <Name>DAL.Root.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DAL.Root.NHibernate\DAL.Root.NHibernate.csproj">
+      <Project>{9ecb0d85-6a35-4c58-8479-fb20b3e21da5}</Project>
+      <Name>DAL.Root.NHibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DAL.Root\DAL.Root.csproj">
+      <Project>{7b4351e3-9cbf-4f0e-8829-9be6ff753c15}</Project>
+      <Name>DAL.Root</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util.Root\Util.Root.csproj">
+      <Project>{fc4e2dcd-4342-4866-9e60-3fcc8c02d1a6}</Project>
+      <Name>Util.Root</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Web.Root\Web.Root.csproj">
+      <Project>{dfe997b1-5459-4f49-a835-d61ba886de70}</Project>
+      <Name>Web.Root</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

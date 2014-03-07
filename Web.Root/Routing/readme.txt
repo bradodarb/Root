@@ -1,0 +1,1 @@
+﻿This implementation of domain routing was pulled from: http://blog.maartenballiauw.be/post/2009/05/20/ASPNET-MVC-Domain-Routing.aspx

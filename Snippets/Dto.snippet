@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>SnippetFile1</Title>
+      <Author>admin</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>dto</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>className</ID>
+          <ToolTip>class name</ToolTip>
+          <Default>ClassName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[using BLL.Root.Dto;
+using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+
+namespace tic.IrvinePacific.BLL.DTO
+{
+	[Serializable]
+	[DataContract(Name="$className$")]
+	public class $className$Dto : DtoBase
+	{
+		$end$
+	}
+}
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

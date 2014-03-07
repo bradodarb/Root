@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>SnippetFile1</Title>
+      <Author>admin</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>admincontroller</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>className</ID>
+          <ToolTip>class name</ToolTip>
+          <Default>className</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp"><![CDATA[using BLL.Root;
+using System.Web.Mvc;
+using tic.IrvinePacific.BLL.DTO;
+using tic.IrvinePacific.BLL.Services;
+using Web.Root.Controllers;
+
+public class $className$Controller : AdminApiControllerBase<$className$Dto>
+    {
+		[HttpPost]
+		public void Create$className$($className$Dto param)
+		{
+			(GetAdmin() as ICompositeService<$className$Dto>).New(param);
+		}
+
+		[HttpPost]
+		public void Update$className$($className$Dto param)
+		{
+			int id;
+			(GetAdmin() as ICompositeService<$className$Dto>).Update(param, out id);
+		}
+
+		protected override BLL.Root.ICompositeService<$className$Dto> GetAdmin()
+		{
+			return new $className$AdminService();
+		}
+	}$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
